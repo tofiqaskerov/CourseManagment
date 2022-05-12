@@ -21,5 +21,6 @@ namespace DataAccess
         public DbSet<Information> Informations { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<Student> Students { get; set; }
+        public DbSet<ShiftTime> ShiftTimes { get; set; }
     }
 }

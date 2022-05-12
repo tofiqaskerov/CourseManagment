@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entities
 {
-    public class EducationPlan : Base
+    public class ShiftTime : Base
     {
-        public string Name { get; set; }
     }
 }
