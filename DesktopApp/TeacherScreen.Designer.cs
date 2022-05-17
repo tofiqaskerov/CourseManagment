@@ -39,9 +39,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtFullname = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgwTeachers = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwTeachers)).BeginInit();
             this.SuspendLayout();
             // 
             // button4
@@ -138,16 +138,16 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "Full Name";
             // 
-            // dataGridView1
+            // dgwTeachers
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 256);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(800, 194);
-            this.dataGridView1.TabIndex = 16;
+            this.dgwTeachers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwTeachers.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgwTeachers.Location = new System.Drawing.Point(0, 256);
+            this.dgwTeachers.Name = "dgwTeachers";
+            this.dgwTeachers.RowHeadersWidth = 51;
+            this.dgwTeachers.RowTemplate.Height = 29;
+            this.dgwTeachers.Size = new System.Drawing.Size(800, 194);
+            this.dgwTeachers.TabIndex = 16;
             // 
             // TeacherScreen
             // 
@@ -165,12 +165,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtFullname);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgwTeachers);
             this.Name = "TeacherScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TeacherScreen";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwTeachers)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,6 +188,6 @@
         private Label label2;
         private TextBox txtFullname;
         private Label label1;
-        private DataGridView dataGridView1;
+        private DataGridView dgwTeachers;
     }
 }
