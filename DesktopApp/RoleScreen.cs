@@ -26,5 +26,10 @@ namespace DesktopApp
             MessageBox.Show("Role is added.");
             txtAddRole.Text = "";
         }
+
+        private void RoleScreen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -36,6 +36,7 @@
             this.btnAddTeacher = new System.Windows.Forms.Button();
             this.btnAddGroup = new System.Windows.Forms.Button();
             this.btnAddStudent = new System.Windows.Forms.Button();
+            this.btnAddShift = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -52,7 +53,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1491, 720);
+            this.panel1.Size = new System.Drawing.Size(1445, 474);
             this.panel1.TabIndex = 0;
             // 
             // splitContainer1
@@ -69,8 +70,8 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.dataGridView1);
-            this.splitContainer1.Size = new System.Drawing.Size(1491, 720);
-            this.splitContainer1.SplitterDistance = 297;
+            this.splitContainer1.Size = new System.Drawing.Size(1445, 474);
+            this.splitContainer1.SplitterDistance = 287;
             this.splitContainer1.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -82,24 +83,26 @@
             this.tableLayoutPanel1.Controls.Add(this.btnAddTeacher, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.btnAddGroup, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnAddStudent, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnAddShift, 0, 5);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 5;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(297, 267);
+            this.tableLayoutPanel1.RowCount = 6;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66944F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66611F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66611F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66611F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66611F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66611F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(287, 267);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // btnAddRole
             // 
             this.btnAddRole.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAddRole.Location = new System.Drawing.Point(3, 215);
+            this.btnAddRole.Location = new System.Drawing.Point(3, 179);
             this.btnAddRole.Name = "btnAddRole";
-            this.btnAddRole.Size = new System.Drawing.Size(291, 49);
+            this.btnAddRole.Size = new System.Drawing.Size(281, 38);
             this.btnAddRole.TabIndex = 4;
             this.btnAddRole.Text = "Add Role";
             this.btnAddRole.UseVisualStyleBackColor = true;
@@ -108,9 +111,9 @@
             // btnInformation
             // 
             this.btnInformation.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnInformation.Location = new System.Drawing.Point(3, 162);
+            this.btnInformation.Location = new System.Drawing.Point(3, 135);
             this.btnInformation.Name = "btnInformation";
-            this.btnInformation.Size = new System.Drawing.Size(291, 47);
+            this.btnInformation.Size = new System.Drawing.Size(281, 38);
             this.btnInformation.TabIndex = 3;
             this.btnInformation.Text = "Information";
             this.btnInformation.UseVisualStyleBackColor = true;
@@ -118,9 +121,9 @@
             // btnAddTeacher
             // 
             this.btnAddTeacher.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAddTeacher.Location = new System.Drawing.Point(3, 109);
+            this.btnAddTeacher.Location = new System.Drawing.Point(3, 91);
             this.btnAddTeacher.Name = "btnAddTeacher";
-            this.btnAddTeacher.Size = new System.Drawing.Size(291, 47);
+            this.btnAddTeacher.Size = new System.Drawing.Size(281, 38);
             this.btnAddTeacher.TabIndex = 2;
             this.btnAddTeacher.Text = "Add Teacher";
             this.btnAddTeacher.UseVisualStyleBackColor = true;
@@ -129,40 +132,52 @@
             // btnAddGroup
             // 
             this.btnAddGroup.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAddGroup.Location = new System.Drawing.Point(3, 56);
+            this.btnAddGroup.Location = new System.Drawing.Point(3, 47);
             this.btnAddGroup.Name = "btnAddGroup";
-            this.btnAddGroup.Size = new System.Drawing.Size(291, 47);
+            this.btnAddGroup.Size = new System.Drawing.Size(281, 38);
             this.btnAddGroup.TabIndex = 1;
             this.btnAddGroup.Text = "Add Group";
             this.btnAddGroup.UseVisualStyleBackColor = true;
+            this.btnAddGroup.Click += new System.EventHandler(this.btnAddGroup_Click);
             // 
             // btnAddStudent
             // 
             this.btnAddStudent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAddStudent.Location = new System.Drawing.Point(3, 3);
             this.btnAddStudent.Name = "btnAddStudent";
-            this.btnAddStudent.Size = new System.Drawing.Size(291, 47);
+            this.btnAddStudent.Size = new System.Drawing.Size(281, 38);
             this.btnAddStudent.TabIndex = 0;
             this.btnAddStudent.Text = "Add Student";
             this.btnAddStudent.UseVisualStyleBackColor = true;
             this.btnAddStudent.Click += new System.EventHandler(this.btnAddStudent_Click);
             // 
+            // btnAddShift
+            // 
+            this.btnAddShift.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAddShift.Location = new System.Drawing.Point(3, 223);
+            this.btnAddShift.Name = "btnAddShift";
+            this.btnAddShift.Size = new System.Drawing.Size(281, 41);
+            this.btnAddShift.TabIndex = 5;
+            this.btnAddShift.Text = "Add Shift";
+            this.btnAddShift.UseVisualStyleBackColor = true;
+            this.btnAddShift.Click += new System.EventHandler(this.btnAddShift_Click);
+            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 532);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 286);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(1190, 188);
+            this.dataGridView1.Size = new System.Drawing.Size(1154, 188);
             this.dataGridView1.TabIndex = 0;
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1491, 720);
+            this.ClientSize = new System.Drawing.Size(1445, 474);
             this.Controls.Add(this.panel1);
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -190,5 +205,6 @@
         private Button btnAddGroup;
         private DataGridView dataGridView1;
         private Button btnAddRole;
+        private Button btnAddShift;
     }
 }
